@@ -3,6 +3,7 @@ import AboutSection from "@/components/AboutSection";
 import Button from "@/components/Button";
 import Input from "@/ui/Input";
 import Textarea from "@/ui/Textarea";
+import Tecnologias from "@/components/Tecnologias";
 import QueHacemosSection from "@/components/QueHacemosSection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <QueHacemosSection />
+        <Tecnologias />
         <p>Input y Textarea</p>
         <Input/>
         <br />
