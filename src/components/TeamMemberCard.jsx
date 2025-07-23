@@ -1,6 +1,7 @@
+'use client';
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import Card from './ui/Card';
+import Card from '@/ui/Card';
 
 function TeamMemberCard({
   avatar,
