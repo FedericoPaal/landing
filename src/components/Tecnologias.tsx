@@ -10,7 +10,7 @@ export default function Tecnologias() {
         Tecnologías en las que Trabajamos
       </h2>
 
-      <div className="div-tecnologias pt-8">
+      <div className="pt-8">
           <div className="cards-tecnologias">
             <div className="li-tecnologias">
               <FaGlobe className="icon-tecnologia" size={48} color="#fff" />
