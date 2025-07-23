@@ -5,6 +5,7 @@ import Input from "@/ui/Input";
 import Textarea from "@/ui/Textarea";
 import Tecnologias from "@/components/Tecnologias";
 import QueHacemosSection from "@/components/QueHacemosSection";
+import FactoryCard from "@/components/FactoryCard";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <QueHacemosSection />
+        <FactoryCard />
         <Tecnologias />
         <p>Input y Textarea</p>
         <Input/>
