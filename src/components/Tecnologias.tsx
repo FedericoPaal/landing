@@ -1,6 +1,11 @@
 "use client";
-import { motion } from "framer-motion";
-import React, { useState, useRef, useEffect } from "react";
+import {
+  SiReact, SiNodedotjs, SiNextdotjs, SiTailwindcss, SiGraphql, SiKotlin,
+  SiHtml5, SiDjango, SiFlask, SiOpenai, SiPostgresql, SiJavascript,
+  SiVuetify, SiSqlite, SiFastapi, SiNestjs, SiMysql, SiAstro, SiAngular,
+  SiGnubash, SiC, SiCplusplus, SiPython, SiCss3, SiTypescript, SiMongodb
+} from "react-icons/si";
+import { VscTerminalPowershell } from "react-icons/vsc";
 import { FaGlobe, FaAndroid, FaApple, FaRegClock, FaTv, FaRocket } from "react-icons/fa";
 
 export default function Tecnologias() {
