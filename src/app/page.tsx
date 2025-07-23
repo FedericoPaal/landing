@@ -16,7 +16,6 @@ export default function Home() {
       <HeroSection />
       
       <div className="container mx-auto px-6 py-24">
-        <HeroSection />
         <ProyClientes />
         {/* ✅ Secciones principales */}
         <AboutSection />
