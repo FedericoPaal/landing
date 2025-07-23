@@ -18,7 +18,7 @@ export default function ProyClientes(){
             <h1 className="text-h1 mb-8 text-center">
                 Proyectos de Nuestros Clientes
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 div-clientes">
                 {proyectos.map((proyecto, index) => (
                     <div key={index} className='card-clientes'>
                         <img className='img-clientes'
