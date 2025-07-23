@@ -627,7 +627,7 @@
     flex: 1 1 100%;
     max-width: 100%;
     height: auto;
-  } 
+  }
 
   .text-clientes {
     padding: 2rem 1rem 1rem 1rem;
@@ -660,7 +660,7 @@
 
 .img-clientes {
   position: absolute;
-  top: -3;
+  top: 0;
   left: 0;
   width: 100%;
   border-left: #000 solid 1px;
