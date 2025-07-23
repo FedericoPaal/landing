@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import Input from "@/ui/Input";
 import Textarea from "@/ui/Textarea";
 import QueHacemosSection from "@/components/QueHacemosSection";
+import ContactCard from "@/components/ContactDatos";
 
 export default function Home() {
   return (
@@ -31,8 +32,9 @@ export default function Home() {
           <Button className="btn-size-3xl cursor-pointer">Enviar mensaje 3XL</Button>
           <Button className="btn-size-4xl cursor-pointer">Enviar mensaje 4XL</Button>
           <Button className="btn-size-5xl cursor-pointer">Enviar mensaje 5XL</Button>
-          <ContactFormSection />
         </div>
+        <ContactCard />
+        <ContactFormSection />
       </div>
     </main>
   );

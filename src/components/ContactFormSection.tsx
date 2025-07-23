@@ -33,13 +33,8 @@ const ContactFormSection = () => {
   return (
     <form 
       onSubmit={handleSubmit(onSubmit)} 
-      className="mx-auto p-8 rounded-xl shadow-lg border border-gray-200 transition-colors duration-300 hover:bg-[#3a5a40]"
-      style={{ 
-        width: '614px', 
-        height: '727px',
-        overflowY: 'auto',
-        backgroundColor: '#5a8f6b'
-      }}
+      className="mx-auto p-6 pb-4 rounded-xl shadow-lg border border-gray-200 transition-colors duration-300 hover:bg-[#3a5a40] bg-[#5a8f6b] w-full max-w-xl"
+      style={{ overflowY: 'auto' }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-5">
@@ -131,8 +126,8 @@ const ContactFormSection = () => {
       <div className="mt-8 flex justify-center">
         <Button
           type="submit"
-          className="bg-black text-inverse font-bold rounded-lg transition-colors duration-200 shadow-md flex items-center justify-center border-2 border-white"
-          style={{ width: '500px', height: '80px', fontSize: '1.25rem' }}
+          className="bg-black text-inverse font-bold rounded-lg transition-colors duration-200 shadow-md flex items-center justify-center border-2 border-white w-full max-w-xs h-16 text-lg"
+          style={{ fontSize: '1.25rem' }}
           disabled={!isValid}
         >
           Enviar mensaje
