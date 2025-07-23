@@ -28,7 +28,7 @@ export default function ProyClientes(){
                             height={proyecto.image.height}
                         />
                         <div className='text-clientes'>
-                            <h4 className="text-xl font-bold mt-4">{proyecto.title}</h4>
+                            <h3 className="text-2xl font-bold mt-4">{proyecto.title}</h3>
                             <p className="text-md">{proyecto.description}</p>
                             <button className="mt-4 px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-hover transition-colors button-clientes">
                                 Ver
