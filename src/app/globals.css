@@ -486,8 +486,8 @@
   padding: 2rem 1rem;
   background-color: var(--color-tertiary);
   color: var(--color-text-inverse);
-  width: 1440px;
-  height: 406px;
+  width: 100%;
+  height: auto;
   align-items: center;
 }
 
@@ -575,16 +575,16 @@
 }
 
 .icon-container {
+  position: relative;
   display: flex;
   justify-content: center;
   text-align: center;
   background-color: #01454F;
   border-radius: 15px;
-  width: 743px;
+  width: 89vw;
   height: 140px;
-  margin: 0 auto;
   padding-top: 0.2rem;
-  margin-top: -50px;
+  margin-top: -120px;
   overflow: hidden;
 }
 

@@ -6,6 +6,7 @@ import Textarea from "@/ui/Textarea";
 import Tecnologias from "@/components/Tecnologias";
 import QueHacemosSection from "@/components/QueHacemosSection";
 import ProyClientes from "@/components/ProyectoClientes";
+import IconosTecnologias from "@/components/IconosTecnologias";
 
 export default function Home() {
   return (
@@ -18,23 +19,7 @@ export default function Home() {
         <AboutSection />
         <QueHacemosSection />
         <Tecnologias />
-        <p>Input y Textarea</p>
-        <Input/>
-        <br />
-        <br />
-        <Textarea/>
-        <p>Button</p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
-          <Button className="btn-size-xs cursor-pointer">Enviar mensaje XS</Button>
-          <Button className="btn-size-sm cursor-pointer">Enviar mensaje SM</Button>
-          <Button className="btn-size-md cursor-pointer">Enviar mensaje MD</Button>
-          <Button className="btn-size-lg cursor-pointer">Enviar mensaje LG</Button>
-          <Button className="btn-size-xl cursor-pointer">Enviar mensaje XL</Button>
-          <Button className="btn-size-2xl cursor-pointer">Enviar mensaje 2XL</Button>
-          <Button className="btn-size-3xl cursor-pointer">Enviar mensaje 3XL</Button>
-          <Button className="btn-size-4xl cursor-pointer">Enviar mensaje 4XL</Button>
-          <Button className="btn-size-5xl cursor-pointer">Enviar mensaje 5XL</Button>
-        </div>
+        <IconosTecnologias />
       </div>
     </main>
   );
