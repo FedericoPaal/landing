@@ -5,6 +5,7 @@ import Input from "@/ui/Input";
 import Textarea from "@/ui/Textarea";
 import Tecnologias from "@/components/Tecnologias";
 import QueHacemosSection from "@/components/QueHacemosSection";
+import ProyClientes from "@/components/ProyectoClientes";
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
       <HeroSection />
       <div className="container mx-auto px-6 py-24">
         <HeroSection />
+        <ProyClientes />
+        <br />
         <AboutSection />
         <QueHacemosSection />
         <Tecnologias />
