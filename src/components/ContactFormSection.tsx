@@ -20,7 +20,7 @@ const ContactFormSection = () => {
     register,
     handleSubmit,
     formState: { errors, isValid },
-  } = useForm({
+  } = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
     mode: "onChange"
   });
@@ -35,6 +35,8 @@ const ContactFormSection = () => {
       onSubmit={handleSubmit(onSubmit)} 
       className="mx-auto p-6 pb-4 rounded-xl shadow-lg border border-gray-200 transition-colors duration-300 hover:bg-[#3a5a40] bg-[#5a8f6b] w-full max-w-xl"
       style={{ overflowY: 'auto' }}
+      autoComplete="off"
+      noValidate
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-5">
@@ -48,6 +50,7 @@ const ContactFormSection = () => {
               placeholder="Tu nombre completo"
               aria-invalid={!!errors.name}
               className="w-full bg-white border-gray-300 focus:border-gray-900 text-gray-800"
+              autoComplete="name"
             />
             {errors.name && (
               <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -65,6 +68,7 @@ const ContactFormSection = () => {
               placeholder="tucorreo@ejemplo.com"
               aria-invalid={!!errors.email}
               className="w-full bg-white border-gray-300 focus:border-gray-900 text-gray-800"
+              autoComplete="email"
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
@@ -83,6 +87,7 @@ const ContactFormSection = () => {
               placeholder="+54 11 1234-5678"
               aria-invalid={!!errors.phone}
               className="w-full bg-white border-gray-300 focus:border-gray-900 text-gray-800"
+              autoComplete="tel"
             />
             {errors.phone && (
               <p className="mt-1 text-sm text-red-600">{errors.phone.message}</p>
@@ -99,6 +104,7 @@ const ContactFormSection = () => {
               placeholder="Nombre de tu empresa/proyecto"
               aria-invalid={!!errors.project}
               className="w-full bg-white border-gray-300 focus:border-gray-900 text-gray-800"
+              autoComplete="organization"
             />
             {errors.project && (
               <p className="mt-1 text-sm text-red-600">{errors.project.message}</p>
