@@ -27,16 +27,22 @@ export default function Home() {
         <Tecnologias />
         
         {/* Pruebas de UI */}
-        <section className="mt-16 p-8 bg-gray-50 rounded-lg">
+        <section className="mt-16 p-8 bg-gray-50 dark:bg-slate-800 rounded-lg">
           <h2 className="text-2xl font-bold mb-6">Componentes de UI</h2>
           
           {/* Input y Textarea */}
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Input y Textarea</h3>
             <div className="space-y-4">
-              {/* Considera agregar <label> para mejor accesibilidad */}
-              <Input placeholder="Escribe algo aquí..." />
-              <Textarea placeholder="Tu mensaje aquí..." />
+              {/* Accesibilidad mejorada con label y sr-only */}
+              <label>
+                <span className="sr-only">Campo de texto</span>
+                <Input placeholder="Escribe algo aquí..." />
+              </label>
+              <label>
+                <span className="sr-only">Área de texto</span>
+                <Textarea placeholder="Tu mensaje aquí..." />
+              </label>
             </div>
           </div>
           
