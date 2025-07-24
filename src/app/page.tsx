@@ -1,3 +1,4 @@
+import ContactFormSection from "@/components/ContactFormSection";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import Button from "@/components/Button";
@@ -5,31 +6,43 @@ import Input from "@/ui/Input";
 import Textarea from "@/ui/Textarea";
 import Tecnologias from "@/components/Tecnologias";
 import QueHacemosSection from "@/components/QueHacemosSection";
+import ContactCard from "@/components/ContactDatos";
 import TeamMemberCard from "@/components/TeamMemberCard";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col gap-6 items-start">
-      {/* ✅ Hero Section solo una vez */}
+      {/* Hero Section */}
       <HeroSection />
       
       <div className="container mx-auto px-6 py-24">
-        {/* ✅ Secciones principales */}
+        {/* Secciones principales */}
         <AboutSection />
         <QueHacemosSection />
+        
+        {/* Componentes de ambas ramas */}
         <TeamMemberCard />
+        <ContactCard />
+        <ContactFormSection />
         <Tecnologias />
         
-        {/* ✅ Sección de pruebas de UI - mejor organizada */}
-        <section className="mt-16 p-8 bg-gray-50 rounded-lg">
+        {/* Pruebas de UI */}
+        <section className="mt-16 p-8 bg-gray-50 dark:bg-slate-800 rounded-lg">
           <h2 className="text-2xl font-bold mb-6">Componentes de UI</h2>
           
           {/* Input y Textarea */}
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Input y Textarea</h3>
             <div className="space-y-4">
-              <Input placeholder="Escribe algo aquí..." />
-              <Textarea placeholder="Tu mensaje aquí..." />
+              {/* Accesibilidad mejorada con label y sr-only */}
+              <label>
+                <span className="sr-only">Campo de texto</span>
+                <Input placeholder="Escribe algo aquí..." />
+              </label>
+              <label>
+                <span className="sr-only">Área de texto</span>
+                <Textarea placeholder="Tu mensaje aquí..." />
+              </label>
             </div>
           </div>
           
@@ -53,4 +66,3 @@ export default function Home() {
     </main>
   );
 }
-
