@@ -12,21 +12,21 @@ import TeamMemberCard from "@/components/TeamMemberCard";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col gap-6 items-start">
-      {/* ✅ Hero Section */}
+      {/* Hero Section */}
       <HeroSection />
       
       <div className="container mx-auto px-6 py-24">
-        {/* ✅ Secciones principales */}
+        {/* Secciones principales */}
         <AboutSection />
         <QueHacemosSection />
         
-        {/* ✅ Componentes de ambas ramas */}
+        {/* Componentes de ambas ramas */}
         <TeamMemberCard />
         <ContactCard />
         <ContactFormSection />
         <Tecnologias />
         
-        {/* ✅ Sección de pruebas de UI - organizada */}
+        {/* Pruebas de UI */}
         <section className="mt-16 p-8 bg-gray-50 rounded-lg">
           <h2 className="text-2xl font-bold mb-6">Componentes de UI</h2>
           
@@ -34,6 +34,7 @@ export default function Home() {
           <div className="mb-8">
             <h3 className="text-lg font-semibold mb-4">Input y Textarea</h3>
             <div className="space-y-4">
+              {/* Considera agregar <label> para mejor accesibilidad */}
               <Input placeholder="Escribe algo aquí..." />
               <Textarea placeholder="Tu mensaje aquí..." />
             </div>
